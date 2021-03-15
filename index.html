@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f9b02f8dcb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <h1 id="city" class="fs-1">London, UK</h1>
+            <h3 class="fs-6 date">Friday, 5th February</h3>
+          </div>
+          <div class="col-4">
+            <form class="form-inline">
+              <input
+                id="city-input"
+                class="form-control mr-sm-2 d-inline w-75 h-50"
+                type="search"
+                placeholder="Search City"
+                aria-label="Search"
+              />
+              <button
+                id="search-button"
+                class="btn btn-outline-warning my-2 my-sm-0 d-inline h-50"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-4 text-center">
+            <div class="row">
+              <div class="col">
+                <i class="fas fa-sun current-weather-icon"></i>
+              </div>
+              <div class="col">
+                <div class="temp-container">
+                  <h2 class="temp">36°</h2>
+                  <h3 class="fs-6 high-low">3° / 17°</h3>
+                </div>
+              </div>
+              <div class="col">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-outlined"
+                  autocomplete="off"
+                />
+                <label
+                  class="btn btn-outline-warning btn-sm button_name"
+                  for="btn-check-outlined"
+                  >°C</label
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body text-center p-0">
+                  <h5 class="card-title fs-1 p-2">
+                    <i class="fas fa-bolt"></i>
+                  </h5>
+                  <h6 class="card-subtitle mt-2 text-muted">Sat 16°</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body text-center p-0">
+                  <h5 class="card-title fs-1 p-2">
+                    <i class="fas fa-wind"></i>
+                  </h5>
+                  <h6 class="card-subtitle mt-2 text-muted">Sun 14°</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body text-center p-0">
+                  <h5 class="card-title fs-1 p-2">
+                    <i class="fas fa-cloud"></i>
+                  </h5>
+                  <h6 class="card-subtitle mt-2 text-muted">Mon 23°</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body text-center p-0">
+                  <h5 class="card-title fs-1 p-2">
+                    <i class="fas fa-sun"></i>
+                  </h5>
+                  <h6 class="card-subtitle mt-2 text-muted">Tues 12°</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body text-center p-0">
+                  <h5 class="card-title fs-1 p-2">
+                    <i class="fas fa-cloud-sun-rain"></i>
+                  </h5>
+                  <h6 class="card-subtitle mt-2 text-muted">Wed 5°</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

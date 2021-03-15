@@ -1,0 +1,48 @@
+h3 {
+  color: #f7a50d;
+  font-weight: 300;
+}
+
+input {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 3px solid;
+}
+
+.box {
+  border: solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 5vh;
+  position: relative;
+}
+
+.fas.current-weather-icon {
+  font-size: 6rem;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 6rem;
+}
+
+.weather-icon {
+  height: 50px;
+}
+
+.temp-container {
+  width: 5rem;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: lighter;
+  line-height: 0.8;
+}
+
+.high-low {
+  text-align: left;
+}
+
+.form-check-input {
+  color: #f7a50d;
+}
